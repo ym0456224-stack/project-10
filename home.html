@@ -1,0 +1,799 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="home.css">
+<title>Rihla | Explore Egypt</title>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="container nav-inner">
+
+        <a href="#home" class="brand">
+            <!-- Replace this path with your logo image -->
+            <img src="logo.png"
+                 alt="Rihla Egypt Travel"
+                 class="logo">
+        </a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#trips">Trips</a></li>
+            <li><a href="#testimonials">My Bookings</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a href="#footer" class="signin">
+                <i class="fa-regular fa-user"></i> Sign in
+            </a>
+
+            <a href="#search" class="btn">
+                <i class="fa-solid fa-ticket"></i> Book Now
+            </a>
+        </div>
+
+    </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+    <div class="container">
+
+        <div class="hero-content">
+
+            <div class="hero-tag">
+                <i class="fa-solid fa-location-dot"></i>
+                Egypt's #1 Travel Platform
+            </div>
+
+            <h1>
+                Discover Egypt's Best
+                <span>Travel Experiences</span>
+            </h1>
+
+            <p class="hero-description">
+                Journey through ancient wonders and modern marvels.
+                Premium bus travel connecting Egypt's most iconic
+                destinations with unparalleled comfort.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#trips" class="btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Explore Trips
+                </a>
+
+                <a href="#testimonials" class="btn btn-outline">
+                    <i class="fa-regular fa-calendar-check"></i>
+                    My Bookings
+                </a>
+            </div>
+
+        </div>
+
+        <div class="stats">
+
+            <div class="stat">
+                <span class="stat-icon"></span>
+                <div>
+                    <strong>48+</strong>
+                    <small>Active Routes</small>
+                </div>
+            </div>
+
+            <div class="stat">
+                <span class="stat-icon"></span>
+                <div>
+                    <strong>120+</strong>
+                    <small>Daily Trips</small>
+                </div>
+            </div>
+
+            <div class="stat">
+                <span class="stat-icon"></span>
+                <div>
+                    <strong>4.8 ★</strong>
+                    <small>Trip Rating</small>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= SEARCH ================= -->
+<section class="search-wrap" id="search">
+    <div class="container">
+
+        <form class="search-box" id="searchForm">
+
+            <div class="search-field">
+                <i class="fa-solid fa-location-dot"></i>
+                <div style="width:100%">
+                    <label for="destination">Where to?</label>
+                    <select id="destination" required>
+                        <option value="">Choose destination</option>
+                        <option value="Luxor">Luxor</option>
+                        <option value="Aswan">Aswan</option>
+                        <option value="Hurghada">Hurghada</option>
+                        <option value="Siwa">Siwa Oasis</option>
+                        <option value="Alexandria">Alexandria</option>
+                        <option value="Sharm El-Sheikh">Sharm El-Sheikh</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="search-field">
+                <i class="fa-regular fa-calendar"></i>
+                <div style="width:100%">
+                    <label for="travelDate">Date of travel</label>
+                    <input type="date" id="travelDate" required>
+                </div>
+            </div>
+
+            <div class="search-field">
+                <i class="fa-solid fa-users"></i>
+                <div style="width:100%">
+                    <label for="travelers">Travelers</label>
+                    <select id="travelers">
+                        <option value="1">1 Traveler</option>
+                        <option value="2" selected>2 Travelers</option>
+                        <option value="3">3 Travelers</option>
+                        <option value="4">4 Travelers</option>
+                        <option value="5">5+ Travelers</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="btn search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search Trips
+            </button>
+
+        </form>
+
+    </div>
+</section>
+
+
+<!-- ================= POPULAR ROUTES ================= -->
+<section class="section" id="trips">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="eyebrow">
+                <i class="fa-solid fa-star"></i> Featured Trips
+            </span>
+
+            <h2>Popular Routes Across Egypt</h2>
+
+            <p>
+                Hand-picked journeys to Egypt's most iconic destinations
+                with premium comfort and unbeatable prices.
+            </p>
+        </div>
+
+        <div class="routes-grid">
+
+            <article class="route-card">
+                <div class="route-image route-1"></div>
+                <div class="route-content">
+                    <div class="route-top">
+                        <h3>Cairo → Luxor</h3>
+                        <div class="price">$45<small>per person</small></div>
+                    </div>
+                    <div class="route-meta">
+                        <span><i class="fa-regular fa-clock"></i> 9 hours</span>
+                        <span class="stars">★★★★★ <span style="color:#829397">4.8</span></span>
+                    </div>
+                    <p class="availability">● 18 seats left</p>
+                    <div class="route-footer">
+                        <a href="#destinations" class="btn btn-light">View Details</a>
+                        <button class="btn book-trip" data-route="Cairo to Luxor">Book Now</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="route-card">
+                <div class="route-image route-2"></div>
+                <div class="route-content">
+                    <div class="route-top">
+                        <h3>Cairo → Aswan</h3>
+                        <div class="price">$45<small>per person</small></div>
+                    </div>
+                    <div class="route-meta">
+                        <span><i class="fa-regular fa-clock"></i> 12 hours</span>
+                        <span class="stars">★★★★★ <span style="color:#829397">4.8</span></span>
+                    </div>
+                    <p class="availability">● 15 seats left</p>
+                    <div class="route-footer">
+                        <a href="#destinations" class="btn btn-light">View Details</a>
+                        <button class="btn book-trip" data-route="Cairo to Aswan">Book Now</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="route-card">
+                <div class="route-image route-3"></div>
+                <div class="route-content">
+                    <div class="route-top">
+                        <h3>Cairo → Hurghada</h3>
+                        <div class="price">$45<small>per person</small></div>
+                    </div>
+                    <div class="route-meta">
+                        <span><i class="fa-regular fa-clock"></i> 6 hours</span>
+                        <span class="stars">★★★★★ <span style="color:#829397">4.8</span></span>
+                    </div>
+                    <p class="availability">● 10 seats left</p>
+                    <div class="route-footer">
+                        <a href="#destinations" class="btn btn-light">View Details</a>
+                        <button class="btn book-trip" data-route="Cairo to Hurghada">Book Now</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="route-card">
+                <div class="route-image route-4"></div>
+                <div class="route-content">
+                    <div class="route-top">
+                        <h3>Cairo → Alexandria</h3>
+                        <div class="price">$45<small>per person</small></div>
+                    </div>
+                    <div class="route-meta">
+                        <span><i class="fa-regular fa-clock"></i> 3 hours</span>
+                        <span class="stars">★★★★★ <span style="color:#829397">4.7</span></span>
+                    </div>
+                    <p class="availability">● 20 seats left</p>
+                    <div class="route-footer">
+                        <a href="#destinations" class="btn btn-light">View Details</a>
+                        <button class="btn book-trip" data-route="Cairo to Alexandria">Book Now</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="route-card">
+                <div class="route-image route-5"></div>
+                <div class="route-content">
+                    <div class="route-top">
+                        <h3>Cairo → Siwa</h3>
+                        <div class="price">$45<small>per person</small></div>
+                    </div>
+                    <div class="route-meta">
+                        <span><i class="fa-regular fa-clock"></i> 10 hours</span>
+                        <span class="stars">★★★★★ <span style="color:#829397">4.8</span></span>
+                    </div>
+                    <p class="availability">● 12 seats left</p>
+                    <div class="route-footer">
+                        <a href="#destinations" class="btn btn-light">View Details</a>
+                        <button class="btn book-trip" data-route="Cairo to Siwa">Book Now</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="route-card">
+                <div class="route-image route-6"></div>
+                <div class="route-content">
+                    <div class="route-top">
+                        <h3>Luxor → Aswan</h3>
+                        <div class="price">$45<small>per person</small></div>
+                    </div>
+                    <div class="route-meta">
+                        <span><i class="fa-regular fa-clock"></i> 4 hours</span>
+                        <span class="stars">★★★★★ <span style="color:#829397">4.9</span></span>
+                    </div>
+                    <p class="availability">● 16 seats left</p>
+                    <div class="route-footer">
+                        <a href="#destinations" class="btn btn-light">View Details</a>
+                        <button class="btn book-trip" data-route="Luxor to Aswan">Book Now</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <a href="#search" class="view-all">
+            View All Trips <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+</section>
+
+
+<!-- ================= WHY CHOOSE US ================= -->
+<section class="section why-section" id="features">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="eyebrow">✦ Why Choose Us</span>
+            <h2>Travel Smarter With Rihla</h2>
+            <p>
+                Everything you need for a seamless, comfortable Egyptian
+                adventure — all in one platform.
+            </p>
+        </div>
+
+        <div class="features-grid">
+
+            <article class="feature-card">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-bus"></i>
+                </div>
+                <h3>Comfortable Buses</h3>
+                <p>
+                    VIP sleeper seats, climate control, and spacious
+                    legroom for every journey.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+                <h3>Easy Booking</h3>
+                <p>
+                    Book your seat in under 2 minutes with our
+                    streamlined booking process.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3>Secure Payments</h3>
+                <p>
+                    A simple, secure booking experience designed
+                    to protect your information.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <h3>Best Destinations</h3>
+                <p>
+                    Carefully curated routes to Egypt's most
+                    breathtaking cities and landmarks.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= FEATURED DESTINATIONS ================= -->
+<section class="section" id="destinations">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="eyebrow">✦ Top Destinations</span>
+            <h2>Featured <span>Destinations</span></h2>
+            <p>
+                From ancient wonders to turquoise coastlines,
+                explore the most unforgettable places in Egypt.
+            </p>
+        </div>
+
+        <div class="destinations-grid">
+
+            <article class="destination-card dest-1">
+                <span class="destination-tag">Heritage</span>
+                <div class="destination-content">
+                    <div class="stars">★★★★★ <small>(1240)</small></div>
+                    <h3>Giza & Cairo</h3>
+                    <p>Pyramids, Sphinx & vibrant city life</p>
+                    <p class="available">12 trips available →</p>
+                </div>
+            </article>
+
+            <article class="destination-card dest-2">
+                <span class="destination-tag">Relaxation</span>
+                <div class="destination-content">
+                    <div class="stars">★★★★★ <small>(980)</small></div>
+                    <h3>Hurghada</h3>
+                    <p>Red Sea beaches and marine adventures</p>
+                    <p class="available">8 trips available →</p>
+                </div>
+            </article>
+
+            <article class="destination-card dest-3">
+                <span class="destination-tag">Adventure</span>
+                <div class="destination-content">
+                    <div class="stars">★★★★★ <small>(870)</small></div>
+                    <h3>Sharm El-Sheikh</h3>
+                    <p>Crystal waters and unforgettable diving</p>
+                    <p class="available">9 trips available →</p>
+                </div>
+            </article>
+
+            <article class="destination-card dest-4">
+                <span class="destination-tag">History</span>
+                <div class="destination-content">
+                    <div class="stars">★★★★★ <small>(760)</small></div>
+                    <h3>Luxor</h3>
+                    <p>Ancient temples and timeless history</p>
+                    <p class="available">10 trips available →</p>
+                </div>
+            </article>
+
+            <article class="destination-card dest-5">
+                <span class="destination-tag">Culture</span>
+                <div class="destination-content">
+                    <div class="stars">★★★★★ <small>(920)</small></div>
+                    <h3>Aswan</h3>
+                    <p>Nile views, Nubian culture and temples</p>
+                    <p class="available">7 trips available →</p>
+                </div>
+            </article>
+
+            <article class="destination-card dest-6">
+                <span class="destination-tag">Nature</span>
+                <div class="destination-content">
+                    <div class="stars">★★★★★ <small>(540)</small></div>
+                    <h3>Siwa Oasis</h3>
+                    <p>Desert landscapes and peaceful escapes</p>
+                    <p class="available">5 trips available →</p>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= CALL TO ACTION ================= -->
+<section class="section">
+    <div class="container">
+
+        <div class="cta-card">
+
+            <div class="cta-image"></div>
+
+            <div class="cta-content">
+                <h2>Ready for Your Egyptian Adventure?</h2>
+
+                <p>
+                    Join thousands of travelers who have discovered
+                    the magic of Egypt with us. Book your trip today!
+                </p>
+
+                <a href="#search" class="btn">
+                    Book a Trip <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="section" id="testimonials">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="eyebrow">✦ Traveler Stories</span>
+            <h2>What Our Travelers <span>Say</span></h2>
+            <p>
+                Real stories from people who explored Egypt with us.
+            </p>
+        </div>
+
+        <div class="testimonials-grid">
+
+            <article class="testimonial">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p>
+                    Rihla made our Cairo to Luxor journey absolutely
+                    magical. The VIP sleeper bus was immaculate,
+                    comfortable, and the on-board service was top notch.
+                    We will definitely book again!
+                </p>
+                <div class="customer">
+                    <div class="avatar avatar-1"></div>
+                    <div class="customer-info">
+                        <h4>Sarah</h4>
+                        <small>Travel Blogger</small>
+                    </div>
+                    <span class="customer-rating">★★★★★</span>
+                </div>
+            </article>
+
+            <article class="testimonial">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p>
+                    Booking our trip was incredibly easy. Everything
+                    was organized, and the journey was smooth from
+                    beginning to end. Highly recommended!
+                </p>
+                <div class="customer">
+                    <div class="avatar avatar-2"></div>
+                    <div class="customer-info">
+                        <h4>Ahmed</h4>
+                        <small>Frequent Traveler</small>
+                    </div>
+                    <span class="customer-rating">★★★★★</span>
+                </div>
+            </article>
+
+            <article class="testimonial">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p>
+                    The service was excellent and the staff were
+                    friendly. It made exploring Egypt much easier
+                    and more enjoyable than we expected.
+                </p>
+                <div class="customer">
+                    <div class="avatar avatar-3"></div>
+                    <div class="customer-info">
+                        <h4>Mariam</h4>
+                        <small>Adventure Traveler</small>
+                    </div>
+                    <span class="customer-rating">★★★★★</span>
+                </div>
+            </article>
+
+            <article class="testimonial">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p>
+                    Great prices, comfortable buses and a very simple
+                    booking experience. I would absolutely use Rihla
+                    again for my next Egyptian trip.
+                </p>
+                <div class="customer">
+                    <div class="avatar avatar-4"></div>
+                    <div class="customer-info">
+                        <h4>Omar</h4>
+                        <small>Explorer</small>
+                    </div>
+                    <span class="customer-rating">★★★★★</span>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer" id="footer">
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-column">
+
+                <a href="#home" class="brand">
+                    <img src="images/rihla-logo.png"
+                         alt="Rihla Logo"
+                         class="logo">
+                </a>
+
+                <p class="footer-description">
+                    Egypt's premier travel platform, connecting you
+                    to the most beautiful destinations across the
+                    land of the Pharaohs.
+                </p>
+
+                <div class="social-links">
+                    <a href="#footer" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#footer" aria-label="Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#footer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#footer" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#trips">All Trips</a></li>
+                    <li><a href="#testimonials">My Bookings</a></li>
+                    <li><a href="#features">About Us</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Top Destinations</h3>
+                <ul>
+                    <li><a href="#destinations">Luxor</a></li>
+                    <li><a href="#destinations">Aswan</a></li>
+                    <li><a href="#destinations">Hurghada</a></li>
+                    <li><a href="#destinations">Siwa Oasis</a></li>
+                    <li><a href="#destinations">Alexandria</a></li>
+                    <li><a href="#destinations">Sharm El-Sheikh</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>15 Tahrir Square, Cairo, Egypt</span>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>hello@rihla.com</span>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+20 100 123 4567</span>
+                </div>
+
+                <p style="font-size:12px; margin-top:20px;">
+                    Subscribe for travel deals
+                </p>
+
+                <form class="subscribe-form" id="subscribeForm">
+                    <input type="email"
+                           id="subscribeEmail"
+                           placeholder="Your email"
+                           aria-label="Your email"
+                           required>
+                    <button type="submit" aria-label="Subscribe">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Rihla Egypt Travel. All rights reserved.</p>
+
+            <div class="legal-links">
+                <a href="#footer">Privacy Policy</a>
+                <a href="#footer">Terms of Service</a>
+                <a href="#footer">Cookies Policy</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+/* Mobile navigation */
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", function () {
+    navLinks.classList.toggle("open");
+
+    const icon = menuToggle.querySelector("i");
+
+    icon.classList.toggle("fa-bars");
+    icon.classList.toggle("fa-xmark");
+});
+
+/* Close mobile menu after clicking a link */
+document.querySelectorAll("#navLinks a").forEach(function(link) {
+    link.addEventListener("click", function() {
+        navLinks.classList.remove("open");
+
+        const icon = menuToggle.querySelector("i");
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+    });
+});
+
+/* Set the minimum travel date to today */
+const travelDate = document.getElementById("travelDate");
+const today = new Date();
+const localToday = [
+    today.getFullYear(),
+    String(today.getMonth() + 1).padStart(2, "0"),
+    String(today.getDate()).padStart(2, "0")
+].join("-");
+
+travelDate.min = localToday;
+
+/* Search trips */
+document.getElementById("searchForm").addEventListener(
+    "submit",
+    function(event) {
+        event.preventDefault();
+
+        const destination =
+            document.getElementById("destination").value;
+
+        const date = travelDate.value;
+        const travelers =
+            document.getElementById("travelers").value;
+
+        const matchingCards = Array.from(
+            document.querySelectorAll(".route-card")
+        );
+
+        matchingCards.forEach(function(card) {
+            card.style.display = "block";
+        });
+
+        document.getElementById("trips").scrollIntoView({
+            behavior: "smooth"
+        });
+
+        alert(
+            "Your search:\n" +
+            "Destination: " + destination + "\n" +
+            "Date: " + date + "\n" +
+            "Travelers: " + travelers +
+            "\n\nConnect a backend to retrieve real trip results."
+        );
+    }
+);
+
+/* Book trip demo */
+document.querySelectorAll(".book-trip").forEach(function(button) {
+    button.addEventListener("click", function() {
+        const route = button.dataset.route;
+
+        document.getElementById("search").scrollIntoView({
+            behavior: "smooth"
+        });
+
+        alert(
+            "Selected trip: " + route +
+            "\nChoose your date and travelers to continue."
+        );
+    });
+});
+
+/* Newsletter demo */
+document.getElementById("subscribeForm").addEventListener(
+    "submit",
+    function(event) {
+        event.preventDefault();
+
+        const email =
+            document.getElementById("subscribeEmail").value;
+
+        alert(
+            "Thank you for your interest!\n" +
+            "Newsletter subscription requires a backend or email service."
+        );
+
+        console.log("Newsletter demo email:", email);
+        this.reset();
+    }
+);
+</script>
+
+</body>
+</html>

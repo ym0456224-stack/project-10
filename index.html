@@ -1,0 +1,616 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rihla | Authentication</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ==================================
+         SCREEN 1: LOGIN
+    =================================== -->
+    <section class="screen active" id="login">
+
+        <div class="auth-card">
+
+            <div class="image-panel">
+                <h2>Experience the<br>Magic of Egypt</h2>
+                <p>DISCOVER • EXPLORE • ENJOY</p>
+            </div>
+
+            <div class="form-panel">
+                <div class="form-content">
+
+                    <div class="brand">
+                        <img src="img/logo.png"
+                             alt="Rihla Logo"
+                             class="logo-image">
+                    </div>
+
+                    <h1>Welcome Back</h1>
+
+                    <p class="subtitle">
+                        Enter your details to access your account
+                    </p>
+
+                    <form id="loginForm">
+
+                        <div class="input-group">
+                            <label for="loginEmail">
+                                <i class="fa-regular fa-envelope"></i>
+                                Email Address
+                            </label>
+
+                            <input type="email"
+                                   id="loginEmail"
+                                   placeholder="Enter your email"
+                                   required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="loginPassword">
+                                <i class="fa-solid fa-lock"></i>
+                                Password
+                            </label>
+
+                            <input type="password"
+                                   id="loginPassword"
+                                   placeholder="Enter your password"
+                                   required>
+                        </div>
+
+                        <div class="row-between">
+
+                            <label class="remember">
+                                <input type="checkbox">
+                                Remember me
+                            </label>
+
+                            <a href="#"
+                               class="text-link"
+                               onclick="showScreen('forgot'); return false;">
+                                Forgot password?
+                            </a>
+
+                        </div>
+
+                        <button class="primary-btn" type="submit">
+                            Login
+                        </button>
+
+                    </form>
+
+                    <div class="divider">
+                        Or continue with
+                    </div>
+
+                    <div class="social-login">
+
+                        <button type="button">
+                            <i class="fa-brands fa-google google-icon"></i>
+                            Google
+                        </button>
+
+                        <button type="button">
+                            <i class="fa-brands fa-apple apple-icon"></i>
+                            Apple
+                        </button>
+
+                    </div>
+
+                    <p class="bottom-text">
+                        Don't have an account?
+
+                        <button type="button"
+                                onclick="showScreen('signup')">
+                            Sign up
+                        </button>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================================
+         SCREEN 2: SIGN UP
+    =================================== -->
+    <section class="screen" id="signup">
+
+        <div class="auth-card">
+
+            <div class="image-panel">
+                <h2>Experience the<br>Magic of Egypt</h2>
+                <p>YOUR NEXT ADVENTURE STARTS HERE</p>
+            </div>
+
+            <div class="form-panel">
+                <div class="form-content">
+
+                    <div class="brand">
+                        <img src="images/rihla-logo.png"
+                             alt="Rihla Logo"
+                             class="logo-image">
+                    </div>
+
+                    <h1>Create Account</h1>
+
+                    <p class="subtitle">
+                        Sign up to start your journey with us
+                    </p>
+
+                    <form id="signupForm">
+
+                        <div class="input-group">
+                            <label for="signupName">
+                                <i class="fa-regular fa-user"></i>
+                                Full Name
+                            </label>
+
+                            <input type="text"
+                                   id="signupName"
+                                   placeholder="Enter your full name"
+                                   required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="signupEmail">
+                                <i class="fa-regular fa-envelope"></i>
+                                Email Address
+                            </label>
+
+                            <input type="email"
+                                   id="signupEmail"
+                                   placeholder="Enter your email"
+                                   required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="signupPassword">
+                                <i class="fa-solid fa-lock"></i>
+                                Password
+                            </label>
+
+                            <input type="password"
+                                   id="signupPassword"
+                                   placeholder="Create a password"
+                                   minlength="6"
+                                   required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="confirmSignupPassword">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                Confirm Password
+                            </label>
+
+                            <input type="password"
+                                   id="confirmSignupPassword"
+                                   placeholder="Confirm your password"
+                                   minlength="6"
+                                   required>
+                        </div>
+
+                        <button class="primary-btn" type="submit">
+                            Create Account
+                        </button>
+
+                    </form>
+
+                    <p class="bottom-text">
+                        Already have an account?
+
+                        <button type="button"
+                                onclick="showScreen('login')">
+                            Login
+                        </button>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================================
+         SCREEN 3: FORGOT PASSWORD
+    =================================== -->
+    <section class="screen" id="forgot">
+
+        <div class="auth-card">
+
+            <div class="image-panel">
+                <h2>Experience the<br>Magic of Egypt</h2>
+                <p>YOUR JOURNEY CONTINUES</p>
+            </div>
+
+            <div class="form-panel">
+                <div class="form-content">
+
+                    <div class="brand">
+                        <img src="images/rihla-logo.png"
+                             alt="Rihla Logo"
+                             class="logo-image">
+                    </div>
+
+                    <h1>Forgot Password?</h1>
+
+                    <p class="subtitle">
+                        Enter your email address and we'll help
+                        you reset your password.
+                    </p>
+
+                    <form id="forgotForm">
+
+                        <div class="input-group">
+                            <label for="forgotEmail">
+                                <i class="fa-regular fa-envelope"></i>
+                                Email Address
+                            </label>
+
+                            <input type="email"
+                                   id="forgotEmail"
+                                   placeholder="Enter your registered email"
+                                   required>
+                        </div>
+
+                        <button class="primary-btn" type="submit">
+                            Send Reset Link
+                        </button>
+
+                    </form>
+
+                    <p class="bottom-text">
+                        Remember your password?
+
+                        <button type="button"
+                                onclick="showScreen('login')">
+                            Back to Login
+                        </button>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================================
+         SCREEN 4: VERIFY ACCOUNT
+    =================================== -->
+    <section class="screen" id="verify">
+
+        <div class="auth-card">
+
+            <div class="image-panel">
+                <h2>Experience the<br>Magic of Egypt</h2>
+                <p>ONE MORE STEP TO YOUR ADVENTURE</p>
+            </div>
+
+            <div class="form-panel">
+                <div class="form-content">
+
+                    <div class="brand">
+                        <img src="images/rihla-logo.png"
+                             alt="Rihla Logo"
+                             class="logo-image">
+                    </div>
+
+                    <h1>Verify Your Account</h1>
+
+                    <p class="subtitle">
+                        Enter the 4-digit verification code
+                        sent to your email address.
+                    </p>
+
+                    <form id="verifyForm">
+
+                        <div class="code-inputs">
+
+                            <input type="text"
+                                   maxlength="1"
+                                   inputmode="numeric"
+                                   pattern="[0-9]"
+                                   aria-label="Digit 1"
+                                   required>
+
+                            <input type="text"
+                                   maxlength="1"
+                                   inputmode="numeric"
+                                   pattern="[0-9]"
+                                   aria-label="Digit 2"
+                                   required>
+
+                            <input type="text"
+                                   maxlength="1"
+                                   inputmode="numeric"
+                                   pattern="[0-9]"
+                                   aria-label="Digit 3"
+                                   required>
+
+                            <input type="text"
+                                   maxlength="1"
+                                   inputmode="numeric"
+                                   pattern="[0-9]"
+                                   aria-label="Digit 4"
+                                   required>
+
+                        </div>
+
+                        <button class="primary-btn" type="submit">
+                            Verify Account
+                        </button>
+
+                    </form>
+
+                    <p class="bottom-text">
+                        Didn't receive the code?
+
+                        <button type="button"
+                                onclick="resendCode()">
+                            Resend Code
+                        </button>
+
+                        <br>
+
+                        <button type="button"
+                                onclick="showScreen('login')">
+                            Back to Login
+                        </button>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================================
+         SCREEN 5: RESET PASSWORD
+    =================================== -->
+    <section class="screen" id="reset">
+
+        <div class="auth-card">
+
+            <div class="image-panel">
+                <h2>Experience the<br>Magic of Egypt</h2>
+                <p>A FRESH START TO YOUR JOURNEY</p>
+            </div>
+
+            <div class="form-panel">
+                <div class="form-content">
+
+                    <div class="brand">
+                        <img src="images/rihla-logo.png"
+                             alt="Rihla Logo"
+                             class="logo-image">
+                    </div>
+
+                    <h1>Reset Password</h1>
+
+                    <p class="subtitle">
+                        Create a new password for your account.
+                        Make sure it's strong and secure.
+                    </p>
+
+                    <form id="resetForm">
+
+                        <div class="input-group">
+                            <label for="newPassword">
+                                <i class="fa-solid fa-lock"></i>
+                                New Password
+                            </label>
+
+                            <input type="password"
+                                   id="newPassword"
+                                   placeholder="Enter new password"
+                                   minlength="6"
+                                   required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="confirmPassword">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                Confirm Password
+                            </label>
+
+                            <input type="password"
+                                   id="confirmPassword"
+                                   placeholder="Confirm new password"
+                                   minlength="6"
+                                   required>
+                        </div>
+
+                        <button class="primary-btn" type="submit">
+                            Reset Password
+                        </button>
+
+                    </form>
+
+                    <p class="bottom-text">
+                        Remember your password?
+
+                        <button type="button"
+                                onclick="showScreen('login')">
+                            Back to Login
+                        </button>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================================
+         JAVASCRIPT
+    =================================== -->
+    <script>
+
+        // 1. Switch between screens
+        function showScreen(screenId) {
+
+            document.querySelectorAll(".screen").forEach(function(screen) {
+                screen.classList.remove("active");
+            });
+
+            const targetScreen = document.getElementById(screenId);
+
+            if (targetScreen) {
+                targetScreen.classList.add("active");
+            }
+        }
+
+
+        // 2. Login form - front-end demo
+        document.getElementById("loginForm")
+            .addEventListener("submit", function(event) {
+
+                event.preventDefault();
+
+                alert("Login is a demo. Connect a backend to authenticate users.");
+            });
+
+
+        // 3. Sign up form
+        document.getElementById("signupForm")
+            .addEventListener("submit", function(event) {
+
+                event.preventDefault();
+
+                const password =
+                    document.getElementById("signupPassword").value;
+
+                const confirmPassword =
+                    document.getElementById("confirmSignupPassword").value;
+
+                if (password !== confirmPassword) {
+                    alert("Passwords do not match!");
+                    return;
+                }
+
+                showScreen("verify");
+            });
+
+
+        // 4. Forgot password form
+        document.getElementById("forgotForm")
+            .addEventListener("submit", function(event) {
+
+                event.preventDefault();
+
+                showScreen("verify");
+            });
+
+
+        // 5. Verification form
+        document.getElementById("verifyForm")
+            .addEventListener("submit", function(event) {
+
+                event.preventDefault();
+
+                showScreen("reset");
+            });
+
+
+        // 6. Reset password form
+        document.getElementById("resetForm")
+            .addEventListener("submit", function(event) {
+
+                event.preventDefault();
+
+                const password =
+                    document.getElementById("newPassword").value;
+
+                const confirmPassword =
+                    document.getElementById("confirmPassword").value;
+
+                if (password !== confirmPassword) {
+                    alert("Passwords do not match!");
+                    return;
+                }
+
+                alert(
+                    "Demo completed! A backend is required to save your password."
+                );
+
+                showScreen("login");
+            });
+
+
+        // 7. Verification code inputs
+        document.querySelectorAll(".code-inputs input")
+            .forEach(function(input, index, inputs) {
+
+                input.addEventListener("input", function() {
+
+                    this.value = this.value
+                        .replace(/\D/g, "")
+                        .slice(0, 1);
+
+                    if (this.value && index < inputs.length - 1) {
+                        inputs[index + 1].focus();
+                    }
+                });
+
+                input.addEventListener("keydown", function(event) {
+
+                    if (
+                        event.key === "Backspace" &&
+                        !this.value &&
+                        index > 0
+                    ) {
+                        inputs[index - 1].focus();
+                    }
+                });
+
+                input.addEventListener("paste", function(event) {
+
+                    event.preventDefault();
+
+                    const pasted = event.clipboardData
+                        .getData("text")
+                        .replace(/\D/g, "")
+                        .slice(0, inputs.length);
+
+                    pasted.split("").forEach(function(digit, i) {
+                        inputs[i].value = digit;
+                    });
+
+                    const nextIndex = Math.min(
+                        pasted.length,
+                        inputs.length - 1
+                    );
+
+                    inputs[nextIndex].focus();
+                });
+            });
+
+
+        // 8. Resend code - demo only
+        function resendCode() {
+
+            alert(
+                "Resending a verification code requires a backend and email service."
+            );
+        }
+
+    </script>
+
+</body>
+</html>
